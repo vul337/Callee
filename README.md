@@ -50,14 +50,16 @@ python3 pred.py -i /path/to/embeddings
 
 The script outputs scores for each (indirect callsite, candidate callee).
 
+## Tool for collecting indirect call 
+
+Here is a qemu tcg plugin we've modified to collect indirect calls on x86_64: [`ibresolver`](https://github.com/Learner0x5a/ibresolver)
+
+
+
 ## Future Plan
 
-[x] Code of core components
-
-[ ] Pretrained doc2vec model
-
-[ ] Tool for collecting indirect call on x86_64 platform
-
-[ ] Substitute the doc2vec model with transformers
-
-[ ] ...
+ - [x] Code of core components
+ - [ ] Pretrained doc2vec model
+ - [x] Tool for collecting indirect call on x86_64 platform
+ - [ ] Substitute the doc2vec model with transformers
+ - [ ] ...

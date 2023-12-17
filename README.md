@@ -4,7 +4,12 @@ Official code of CALLEE: Recovering Call Graphs for Binaries with Transfer and C
 
 For ease of use, we have made some changes to the original implementation in the paper.
 
-**Status: We are seeking solution for long-time data-sharing.**
+**Status: We have substituted the doc2vec model with transformers and released a new dataset.**
+
+ * The new work **kTrans** is [here](https://github.com/Learner0x5a/kTrans-release).
+ * The new dataset is [here](https://github.com/Learner0x5a/Callee-Dataset).
+
+We have decided to deprecate the old dataset since it was collected several years ago on older versions of Firefox and the Linux kernel.
 
 ## Usage
 
@@ -54,12 +59,3 @@ The script outputs scores for each (indirect callsite, candidate callee).
 
 Here is a qemu tcg plugin we've modified to collect indirect calls on x86_64: [`ibresolver`](https://github.com/Learner0x5a/ibresolver)
 
-
-
-## Future Plan
-
- - [x] Code of core components
- - [ ] Pretrained doc2vec model
- - [x] Tool for collecting indirect call on x86_64 platform
- - [ ] Substitute the doc2vec model with transformers
- - [ ] ...
